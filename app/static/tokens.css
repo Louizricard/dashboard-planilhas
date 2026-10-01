@@ -1,0 +1,62 @@
+/*
+ * FrutMar — tokens do Design System (v1)
+ * Fonte da verdade: Design System FrutMar (claude.ai/artifact/QzWQbfuUzVtPBze8VASwnY)
+ * Não crie cores, tamanhos ou sombras fora desta lista.
+ */
+:root {
+  /* ---------- Cores ---------- */
+  --fundo: #F4F9FC;          /* fundo padrão das páginas */
+  --superficie: #FFFFFF;     /* cartões, caixas */
+  --ceu: #E3F1FA;            /* faixas e seções de apoio */
+  --creme-laranja: #FFF1DC;  /* promoções e avisos */
+  --linha: #D6E6F0;          /* bordas e divisórias */
+  --azul-profundo: #0A3D62;  /* texto principal; fundo escuro (rodapé) */
+  --texto-suave: #4A6275;    /* texto secundário, legendas */
+  --azul-mar: #0B6FA4;       /* ação: botões principais, links, preços */
+  --laranja-fruta: #F39200;  /* destaque + botão do WhatsApp (texto azul-profundo, nunca branco) */
+  --verde-terra: #2E8B3E;    /* "Frut" do logo; texto só ≥ 24px bold */
+  --verde-escuro: #1F7A34;   /* verde para texto pequeno e selos */
+  --verde-folha: #2E9E44;    /* decorativo, nunca texto */
+  --azul-claro: #6CC4F0;     /* destaque sobre azul-profundo */
+  --verde-claro: #7BD389;    /* destaque sobre azul-profundo */
+
+  /* ---------- Tipografia ---------- */
+  --fonte-display: "Poppins", "Trebuchet MS", sans-serif;
+  --fonte-texto: "Nunito Sans", "Segoe UI", sans-serif;
+
+  /* ---------- Espaçamento ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-10: 40px;
+  --space-16: 64px;
+
+  /* ---------- Raios ---------- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  /* ---------- Sombra (a única da marca) ---------- */
+  --sombra-cartao: 0 4px 16px rgba(10, 61, 98, 0.08);
+
+  /* ---------- Layout ---------- */
+  --largura-max: 1200px;
+}
+
+/* ---------- Estilos de texto (use as classes, não tamanhos soltos) ---------- */
+.destaque   { font-family: var(--fonte-display); font-size: 56px; line-height: 60px; font-weight: 700; letter-spacing: -0.02em; }
+.titulo-1   { font-family: var(--fonte-display); font-size: 40px; line-height: 48px; font-weight: 700; letter-spacing: -0.01em; }
+.titulo-2   { font-family: var(--fonte-display); font-size: 28px; line-height: 36px; font-weight: 700; }
+.titulo-3   { font-family: var(--fonte-display); font-size: 20px; line-height: 28px; font-weight: 600; }
+.corpo      { font-family: var(--fonte-texto); font-size: 16px; line-height: 24px; font-weight: 400; }
+.corpo-forte{ font-family: var(--fonte-texto); font-size: 16px; line-height: 24px; font-weight: 700; }
+.legenda    { font-family: var(--fonte-texto); font-size: 14px; line-height: 20px; font-weight: 400; color: var(--texto-suave); }
+.rotulo     { font-family: var(--fonte-texto); font-size: 13px; line-height: 16px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+
+/* Celular: reduz só os dois maiores estilos */
+@media (max-width: 640px) {
+  .destaque { font-size: 36px; line-height: 42px; }
+  .titulo-1 { font-size: 30px; line-height: 38px; }
+}
